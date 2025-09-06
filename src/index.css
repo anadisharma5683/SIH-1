@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Government Healthcare Color Palette */
+    --azure-web: 180 60% 95%;
+    --isabelline: 30 25% 92%;
+    --almond: 34 40% 85%;
+    --pale-dogwood: 25 45% 80%;
+    --lion: 35 25% 60%;
+    
+    /* Semantic Design Tokens */
+    --background: var(--azure-web);
+    --foreground: 210 15% 20%;
+    --card: 0 0% 100%;
+    --card-foreground: 210 15% 20%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 15% 20%;
+    
+    --primary: var(--lion);
+    --primary-foreground: 0 0% 100%;
+    --secondary: var(--isabelline);
+    --secondary-foreground: 210 15% 20%;
+    
+    --muted: var(--almond);
+    --muted-foreground: 210 10% 40%;
+    --accent: var(--pale-dogwood);
+    --accent-foreground: 210 15% 20%;
+    
+    --destructive: 0 75% 55%;
+    --destructive-foreground: 0 0% 100%;
+    --border: var(--almond);
+    --input: 0 0% 100%;
+    --ring: var(--lion);
+    
+    --radius: 0.375rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 210 15% 10%;
+    --foreground: 0 0% 95%;
+    --card: 210 15% 15%;
+    --card-foreground: 0 0% 95%;
+    --popover: 210 15% 15%;
+    --popover-foreground: 0 0% 95%;
+    --primary: var(--pale-dogwood);
+    --primary-foreground: 210 15% 10%;
+    --secondary: 210 10% 20%;
+    --secondary-foreground: 0 0% 95%;
+    --muted: 210 10% 25%;
+    --muted-foreground: 0 0% 65%;
+    --accent: var(--lion);
+    --accent-foreground: 0 0% 95%;
+    --destructive: 0 75% 55%;
+    --destructive-foreground: 0 0% 95%;
+    --border: 210 10% 25%;
+    --input: 210 10% 25%;
+    --ring: var(--pale-dogwood);
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
