@@ -15,13 +15,13 @@ const Hero = () => {
     <section ref={ref} className="relative min-h-screen flex items-center justify-center overflow-hidden bg-background">
       <motion.div 
         style={{ y, opacity }}
-        className="text-center max-w-4xl mx-auto px-4 z-10"
+        className="text-center max-w-4xl mx-auto px-4 z-5"
       >
         <motion.h1 
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="text-5xl md:text-7xl font-bold text-foreground mb-6"
+          className="text-2xl md:text-7xl font-bold text-foreground mb-6"
         >
           Secure Healthcare
           <span className="block text-primary">For Everyone</span>
@@ -31,7 +31,7 @@ const Hero = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="text-xl md:text-2xl text-muted-foreground mb-8 leading-relaxed"
+          className="text-1xl md:text-2xl text-muted-foreground mb-8 leading-relaxed"
         >
           Connecting patients and healthcare providers through a secure, 
           government-approved digital platform built for the future of medicine.
