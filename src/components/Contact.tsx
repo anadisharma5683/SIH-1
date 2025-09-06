@@ -7,7 +7,7 @@ const Contact = () => {
 
   return (
     <section ref={ref} className="py-20 bg-muted">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-5">
         <motion.div
           initial={{ opacity: 0 }}
           animate={isInView ? { opacity: 1 } : { opacity: 0 }}
